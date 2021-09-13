@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  display: block;
+}
+
+body {
+  font-family: "Libre Franklin", "Josefin Sans";
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+}
+
+/* HEADER ELEMENTS */
+.container {
+  position: relative;
+}
+
+.navigation {
+  position: relative;
+  min-height: 10vh;
+  background-color: rgba(108, 124, 141);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-logo {
+  padding: 2rem;
+  width: 20rem;
+  height: auto;
+}
+.nav-items {
+  font-size: 1.5rem;
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+
+  display: flex;
+}
+
+.nav-item {
+  text-decoration: none;
+  padding: 2rem;
+  color: #333;
+
+  display: flex;
+}
+
+.fab {
+  font-size: 3.5rem;
+  padding: 2rem;
+  color: #333;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/*
+/*
+/*
+/*
+/* NEW-ALBUM SECTION */
+.new-album {
+  height: 60vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(108, 124, 141),
+      rgba(190, 191, 192)
+    ),
+    url(img/background-img.jpg);
+  background-color: yellow;
+  clip-path: polygon(0 0, 100% 0, 100% 35rem, 0 100%);
+  /* overflow: hidden; */
+
+  /* justify-content: center; */
+
+  display: flex;
+  flex: 0 0 50%;
+  justify-content: space-evenly;
+}
+.left-section {
+  font-size: 2.5rem;
+  padding: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+.album-announce {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.right-section {
+  padding: 3rem 10rem 4rem 0rem;
+
+  display: flex;
+  align-self: flex-start;
+}
+/*
+/*
+/*
+/*
+/* HOME-PAGE SECTION */
+
+.homepage {
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(108, 124, 141, 0.8),
+      rgba(190, 191, 192, 0.8)
+    ),
+    url(img/background-img.jpg);
+  /* rgba(rgb(108, 124, 141), rgb(190, 191, 192)) */
+  background-size: cover;
+  background-position: top;
+  transform: scaleX(-1);
+  clip-path: polygon(35rem 0rem, 100% 35, 100% 100%, 0 100%);
+  margin-top: -17vh;
+}
+
+/* img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  } */
+/* BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG */
+/*
+/*
+/*
+/* ABOUT US SECTION */
+
+.about-photo {
+  height: 55vh;
+  background-image: url(img/switchfoot_if_i_were_you.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about-history {
+  background-color: rgba(108, 124, 141);
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .container-for-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.about-items {
+  max-width: 120rem;
+  position: relative;
+  margin: 7rem 2rem;
+
+  display: flex;
+  align-items: center;
+}
+.early-days-img {
+  box-shadow: 0.5rem 0.5rem 1rem;
+}
+.item-photo {
+  display: flex;
+  flex: 0 0 50%;
+}
+.item-divider {
+}
+.item-paragraph {
+}
+.title-paragraph {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.history-paragraph {
+  text-align: justify;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* MEMBER PORTRAITS */
+.band-members {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member-img {
+  border-radius: 50rem;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 7rem;
+  margin-left: 7rem;
+}
+
+.fas {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  color: rgb(200, 201, 146);
+}
+.name-icon {
+  display: flex;
+  align-items: center;
+}
+.jerome {
+  margin-left: 3rem;
+}
+.member-name {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+
+BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG
+
+/* FOOTER SECTION */
+/*
+/*
+/*
+/**/
+footer {
+  height: 15vh;
+  position: relative;
+}
+
+.footer-section {
+  background-image: url(img/footer.jpg);
+  background-size: cover;
+  align-items: center;
+  padding: 2rem 15rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container {
+  background-color: rgba(190, 191, 192, 0.8);
+  /* margin: 5rem auto; */
+}
+.footer-img {
+}
+.footer-paragraph {
+  font-size: 1.5rem;
+}
+
+/* BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG */
+
+/* SECTION-FORUM */
+
+.section-forum {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(108, 124, 141),
+      rgba(190, 191, 192)
+    ),
+    url(img/background-img.jpg);
+}
+.container-forum {
+  padding-top: 10rem;
+  margin: 0rem 35rem;
+  color: #fff;
+  /* background-color: green; */
+}
+.nume,
+.email,
+.Birthday,
+.Checkbox,
+.album {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}

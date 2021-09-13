@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  display: block;
+}
+
+body {
+  font-family: "Libre Franklin", "Josefin Sans";
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+}
+
+/* HEADER ELEMENTS */
+.container {
+  position: relative;
+}
+
+.navigation {
+  position: relative;
+  min-height: 10vh;
+  background-color: rgba(108, 124, 141);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-logo {
+  padding: 2rem;
+  width: 20rem;
+  height: auto;
+}
+.nav-items {
+  font-size: 1.5rem;
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+
+  display: flex;
+}
+
+.nav-item {
+  text-decoration: none;
+  padding: 2rem;
+  color: #333;
+
+  display: flex;
+}
+
+.fab {
+  font-size: 3.5rem;
+  padding: 2rem;
+  color: #333;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* grid-width: 114rem;
+gutter-vertical: 8rem;
+gutter-horizontal: 6rem; */
+
+/* SECTION-CONCERT BUGBUGBUGBUGBUGBUG */
+.section-concert {
+  margin: 7rem 15rem;
+}
+
+.ticket-announce {
+  font-size: 4rem;
+  margin-bottom: 7rem;
+}
+.tickets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 25rem);
+  /* grid-column-gap: 3rem; */
+  grid-gap: 8rem;
+}
+
+.item {
+  background-color: rgb(241, 241, 231);
+  border-radius: 0.2rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 40%;
+  box-shadow: #333 1rem 1rem 2rem;
+}
+
+.date-location {
+  padding: 3rem 1.5rem;
+}
+
+.date {
+  font-size: 1.3rem;
+}
+.location {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+}
+.place-item::before {
+  content: "";
+  height: 0.1rem;
+  display: block;
+  background-color: grey;
+}
+.place-item::after {
+  content: "";
+  height: 0.1rem;
+  display: block;
+  background-color: grey;
+}
+.place {
+  padding: 1rem;
+}
+
+/* BUTTON */
+.buy-ticket {
+  background-color: #333;
+  border: none;
+  color: rgb(241, 241, 231);
+  /* text-align: center; */
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  height: 4rem;
+  box-shadow: #333 1rem 1rem 2rem;
+}
+
+.buy-ticket:hover {
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+
+.more-tickets {
+  display: block;
+
+  font-size: 1.7rem;
+  background-color: rgb(241, 241, 231);
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  border-radius: 10rem;
+  padding: 2rem 1rem;
+  margin-top: 9rem;
+  box-shadow: 1rem 1rem 2rem;
+}
+
+.more-tickets:hover,
+.more-tickets:active {
+  background-color: rgb(216, 216, 183);
+}
+
+.tickets-link {
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  /* font-style: none; */
+}
+
+.more-tickets-link {
+  text-decoration: none;
+  color: #333;
+  border: none;
+}
+
+/* <div class="item ticket-1">
+            <div class="date-location">
+              <h4 class="date">sep 13, 2021</h4>
+              <h2 class="location">phoenix, az</h2>
+            </div>
+            <h5 class="place">arizona federal theatre</h5>
+            <button class="buy-ticket">tickets &#8594;</button>
+          </div> */
+
+.ticket-1 {
+}
+.ticket-2 {
+}
+.ticket-3 {
+}
+.ticket-4 {
+}
+.ticket-5 {
+}
+.ticket-6 {
+}
+.ticket-7 {
+}
+.ticket-8 {
+}
+.ticket-9 {
+}
+.ticket-11 {
+  background-color: #fff;
+  display: block;
+  box-shadow: none;
+}
+
+BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG
+
+/* FOOTER SECTION */
+/*
+/*
+/*
+/**/
+footer {
+  height: 15vh;
+  position: relative;
+}
+
+.footer-section {
+  background-image: url(img/footer.jpg);
+  background-size: cover;
+  align-items: center;
+  padding: 2rem 15rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container {
+  background-color: rgba(190, 191, 192, 0.8);
+  /* margin: 5rem auto; */
+}
+.footer-img {
+}
+.footer-paragraph {
+  font-size: 1.5rem;
+}
+
+/* BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG */
+
+/* ALBUM SECTION */
+/*
+/*
+/**/
+
+.album-section {
+  min-height: 80vh;
+  margin: 5rem 5rem;
+}
+.albums {
+  margin-bottom: 10rem;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 20rem);
+  grid-gap: 7rem;
+}
+
+.album-item {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.title-img {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 75% 25%;
+}
+.songs-list {
+  background-color: rgb(253, 253, 235);
+  padding: 0.5rem 0rem;
+  list-style-type: none;
+  display: grid;
+}
+.song {
+}
+.songs-heading {
+  padding: 0.5rem 2rem;
+}
+.song:not(:first-child)::before {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  background-color: rgb(211, 209, 209);
+}
+.song:last-child {
+  margin-bottom: -0.5rem;
+}
+.song:first-child {
+}
+.img-album {
+  width: 20rem;
+  background-size: cover;
+}
+
+.title-album {
+  background-color: rgba(108, 124, 141);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 200;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.title-live {
+  background-color: tomato;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 200;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+/* BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG */
+
+/* SECTION-APPS */
+
+.section-apps {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+}
+.fa-youtube {
+  color: red;
+}
+
+.fa-spotify {
+  color: green;
+}
+
+/* <form action="contact.html" method="POST">
+          <div class="nume">
+            <label for="name">Name</label>
+            <input type="text" name="nume" id="name" placeholder="..." />
+          </div>
+          <div class="email">
+            <label for="email">Your Email</label>
+            <input type="email" name="email" id="email" placeholder="..." />
+          </div>
+          <div class="Birthday">
+            <label for="date">Your Birthday</label>
+            <input type="date" name="date" id="date" placeholder="..." />
+          </div>
+          <div class="Checkbox">
+            <label for="checkbox">Your Gender</label>
+            <input
+              type="checkbox"
+              name="date" */
