@@ -15,44 +15,59 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css-grid.css" />
-    <title>Document</title>
+    <title>Switchfoot | Band</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <nav class="navigation">
-          <img class="img-logo" src="img/SF_Logo_300x.png" alt="Band logo" />
-          <ul class="nav-items">
-            <li><a href="index.html" class="nav-item">Homepage</a></li>
-            <li><a href="about.html" class="nav-item">About Us</a></li>
-            <li><a href="concerts.html" class="nav-item">Concert</a></li>
-            <li><a href="albums.html" class="nav-item">Albums</a></li>
-            <li><a href="contact.html" class="nav-item">Contact</a></li>
-          </ul>
-          <span class="icon">
-            <a href="https://www.instagram.com/switchfoot/?hl=en">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-          </span>
-        </nav>
+        <aside class="">
+          <nav class="navigation">
+            <img class="img-logo" src="img/SF_Logo_300x.png" alt="Band logo" />
+            <div class="navbar">
+              <ul class="nav-items">
+                <li><a href="index.html" class="nav-item">Homepage</a></li>
+                <li><a href="about.html" class="nav-item-2">About Us</a>
+                  <ul class="htmlCss-sub-menu sub-menu">
+                    <li class="history1"><a href="#history-section">History</a></li>
+                    <li class="members1"><a href="#members-section">Members</a></li>
+                  </ul>
+                </li>
+                <li><a href="concerts.html" class="nav-item">Concert</a></li>
+                <li><a href="albums.html" class="nav-item">Albums</a></li>
+                <li><a href="contact.html" class="nav-item">Contact</a></li>
+              </ul>
+            </div>
+            <span class="icon">
+              <a href="https://www.instagram.com/switchfoot/?hl=en">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </span>
+          </nav>
+        </aside>
       </div>
     </header>
     <main>
       <div class="section-concert">
         <h1 class="ticket-announce">Buy tickets for '21 tour!</h1>
+        <h2 class="current-date">29, Sept 2021</h2>
         <div class="tickets">
           <div class="item ticket-1">
             <div class="date-location">
-              <h4 class="date">sep 13, 2021</h4>
-              <h2 class="location">phoenix, az</h2>
+              <div class="date-days-remain date-1">
+                <h4 class="date ">sep 28, 2021</h4>
+              </div>
+              <div class="location-capacity loc-1">
+                <h2 class="location">phoenix, az</h2>
+
+                
+              </div>
             </div>
             <div class="place-item">
               <h3 class="place">arizona federal theatre</h3>
             </div>
-            <button class="buy-ticket">
+            <button class="buy-ticket buy-ticket-1">
               <a
                 class="tickets-link ticket-color"
-                href="https://go.seated.com/tour-events/5a04f148-b330-477f-abdb-861145ec2f7e"
               >
                 tickets &#8594;
               </a>
@@ -60,17 +75,20 @@
           </div>
 
           <div class="item ticket-2">
-            <div class="date-location">
-              <h4 class="date">sep 14, 2021</h4>
-              <h2 class="location">san diego, ca</h2>
-            </div>
+              <div class="date-location">
+                <div class="date-days-remain date-2">
+                  <h4 class="date ">sep 29, 2021</h4>
+                </div>
+                <div class="location-capacity loc-2">
+                  <h2 class="location">san diego, ca</h2>
+                </div>
+              </div>
             <div class="place-item">
               <h3 class="place">cal coast credit union amphitheater</h3>
             </div>
-            <button class="buy-ticket">
+            <button class="buy-ticket buy-ticket-2">
               <a
                 class="tickets-link ticket-color"
-                href="https://go.seated.com/tour-events/5a04f148-b330-477f-abdb-861145ec2f7e"
               >
                 tickets &#8594;
               </a>
@@ -79,16 +97,20 @@
 
           <div class="item ticket-3">
             <div class="date-location">
-              <h4 class="date">sep 16, 2021</h4>
-              <h2 class="location">los angeles, ca</h2>
+              <div class="date-days-remain date-3">
+                <h4 class="date ">sep 30, 2021</h4>
+
+              </div>
+              <div class="location-capacity loc-3">
+                <h2 class="location">los angeles, ca</h2>
+              </div>
             </div>
             <div class="place-item">
               <h3 class="place">greek theatre</h3>
             </div>
-            <button class="buy-ticket">
+            <button class="buy-ticket buy-ticket-3">
               <a
                 class="tickets-link ticket-color"
-                href="https://go.seated.com/tour-events/5a04f148-b330-477f-abdb-861145ec2f7e"
               >
                 tickets &#8594;
               </a>
@@ -97,17 +119,20 @@
 
           <div class="item ticket-4">
             <div class="date-location">
-              <h4 class="date">sep 18, 2021</h4>
-              <h2 class="location">bend, or</h2>
+              <div class="date-days-remain date-4">
+                <h4 class="date">oct 1, 2021</h4>
+
+              </div>
+              <div class="location-capacity loc-4">
+                <h2 class="location">bend, or</h2>
+                </div>
             </div>
             <div class="place-item">
               <h3 class="place">les schwab amphitheater</h3>
             </div>
-            <button class="buy-ticket">
+            <button class="buy-ticket buy-ticket-4">
               <a
-                class="tickets-link ticket-color"
-                href="https://go.seated.com/tour-events/5a04f148-b330-477f-abdb-861145ec2f7e"
-              >
+                class="tickets-link ticket-color"              >
                 tickets &#8594;
               </a>
             </button>
@@ -115,16 +140,20 @@
 
           <div class="item ticket-5">
             <div class="date-location">
-              <h4 class="date">sep 19, 2021</h4>
-              <h2 class="location">redmond, wa</h2>
+              <div class="date-days-remain date-5">
+                <h4 class="date">oct 2, 2021</h4>
+
+              </div>
+              <div class="location-capacity loc-5">
+                <h2 class="location">redmond, wa</h2>
+                </div>
             </div>
             <div class="place-item">
               <h3 class="place">marymoor park</h3>
             </div>
-            <button class="buy-ticket">
+            <button class="buy-ticket buy-ticket-5">
               <a
                 class="tickets-link ticket-color"
-                href="https://go.seated.com/tour-events/5a04f148-b330-477f-abdb-861145ec2f7e"
               >
                 tickets &#8594;
               </a>
@@ -133,16 +162,20 @@
 
           <div class="item ticket-6">
             <div class="date-location">
-              <h4 class="date">sep 21, 2021</h4>
-              <h2 class="location">bonner, mt</h2>
+              <div class="date-days-remain date-6">
+                <h4 class="date">oct 3, 2021</h4>
+
+              </div>
+              <div class="location-capacity loc-6">
+                <h2 class="location">bonner, mt</h2>
+                </div>
             </div>
             <div class="place-item">
               <h3 class="place">kettlehouse amphitheater</h3>
             </div>
-            <button class="buy-ticket">
+            <button class="buy-ticket buy-ticket-6">
               <a
                 class="tickets-link ticket-color"
-                href="https://go.seated.com/tour-events/5a04f148-b330-477f-abdb-861145ec2f7e"
               >
                 tickets &#8594;
               </a>
@@ -151,16 +184,20 @@
 
           <div class="item ticket-7">
             <div class="date-location">
-              <h4 class="date">sep 23, 2021</h4>
-              <h2 class="location">moorhead, mn</h2>
+              <div class="date-days-remain date-7">
+                <h4 class="date">oct 7, 2021</h4>
+
+              </div>
+              <div class="location-capacity loc-7">
+                <h2 class="location">moorhead, mn</h2>
+                </div>
             </div>
             <div class="place-item">
               <h3 class="place">bluestem center for the arts</h3>
             </div>
-            <button class="buy-ticket">
+            <button class="buy-ticket buy-ticket-7">
               <a
                 class="tickets-link ticket-color"
-                href="https://go.seated.com/tour-events/5a04f148-b330-477f-abdb-861145ec2f7e"
               >
                 tickets &#8594;
               </a>
@@ -169,16 +206,20 @@
 
           <div class="item ticket-8">
             <div class="date-location">
-              <h4 class="date">sep 24, 2021</h4>
-              <h2 class="location">minneapolis, mn</h2>
+              <div class="date-days-remain date-8">
+                <h4 class="date">oct 8, 2021</h4>
+
+              </div>
+              <div class="location-capacity loc-8">
+                <h2 class="location">minneapolis, mn</h2>
+                </div>
             </div>
             <div class="place-item">
               <h3 class="place">the armory</h3>
             </div>
-            <button class="buy-ticket">
+            <button class="buy-ticket  buy-ticket-8">
               <a
                 class="tickets-link ticket-color"
-                href="https://go.seated.com/tour-events/5a04f148-b330-477f-abdb-861145ec2f7e"
               >
                 tickets &#8594;
               </a>
@@ -187,16 +228,20 @@
 
           <div class="item ticket-9">
             <div class="date-location">
-              <h4 class="date">sep 25, 2021</h4>
-              <h2 class="location">madison, wi</h2>
+              <div class="date-days-remain date-9">
+                <h4 class="date ">oct 9, 2021</h4>
+
+              </div>
+              <div class="location-capacity loc-9">
+                <h2 class="location">madison, wi</h2>
+                </div>
             </div>
             <div class="place-item">
               <h3 class="place">the sylvee</h3>
             </div>
-            <button class="buy-ticket">
+            <button class="buy-ticket buy-ticket-9">
               <a
                 class="tickets-link"
-                href="https://go.seated.com/tour-events/5a04f148-b330-477f-abdb-861145ec2f7e"
               >
                 tickets &#8594;
               </a>
@@ -205,16 +250,20 @@
 
           <div class="item ticket-10">
             <div class="date-location">
-              <h4 class="date">sep 26, 2021</h4>
-              <h2 class="location">indianapolis, in</h2>
+              <div class="date-days-remain  date-10">
+                <h4 class="date">oct 10, 2021</h4>
+
+              </div>
+              <div class="location-capacity loc-10">
+                <h2 class="location">indianapolis, in</h2>
+                </div>
             </div>
             <div class="place-item">
               <h3 class="place">white river state park</h3>
             </div>
-            <button class="buy-ticket">
+            <button class="buy-ticket buy-ticket-10">
               <a
                 class="tickets-link ticket-color"
-                href="https://go.seated.com/tour-events/5a04f148-b330-477f-abdb-861145ec2f7e"
               >
                 tickets &#8594;
               </a>
@@ -244,5 +293,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

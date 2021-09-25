@@ -32,12 +32,54 @@ main {
 header {
 }
 
+nav {
+  position: fixed;
+  /* min-height: -20vh; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(108, 124, 141);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .6s;
+  /* padding: 4rem 10rem; */
+  z-index: 1000;
+}
+
+nav ul {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+nav ul li {
+  position: relative;
+  list-style: none;
+}
+nav ul li a {
+  position: relative;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: .2rem;
+  font-weight: 500;
+  transition: .6s;
+}
+nav.sticky {
+  /* padding: .5rem 10rem; */
+  background-color: rgba(108, 124, 141);
+}
+
 /* HEADER ELEMENTS */
 .container {
   position: relative;
 }
 
-.navigation {
+
+/* .navigation {
   position: relative;
   min-height: 10vh;
   background-color: rgba(108, 124, 141);
@@ -45,7 +87,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 .img-logo {
   padding: 2rem;
@@ -64,7 +106,7 @@ header {
 .nav-item {
   text-decoration: none;
   padding: 2rem;
-  color: #333;
+  color: #fff;
 
   display: flex;
 }
@@ -79,18 +121,67 @@ header {
   justify-content: flex-start;
 }
 
+.sticky {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+
+/* BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG */
+
+/* DROPDOWN menu */
+
+.navigation .nav-items .sub-menu {
+  position: absolute;
+  left: 0;
+  background: rgba(108, 124, 141);
+  line-height: 4rem;
+  border-radius: 0 0 .6rem .6rem;
+  display: none;
+
+  /* display: flex;
+  flex-direction: column; */
+}
+.navigation .nav-items .sub-menu li {
+  padding: 0 2.2rem;
+  border-bottom: .1rem solid rgba(255,255, 255, .1);
+}
+.navigation .nav-items .sub-menu li a {
+  color: #fff;
+  font-size: 1.5rem;
+  font: 500;
+}
+
+.navigation .nav-items li:hover .htmlCss-sub-menu,
+.navigation .nav-items li:hover .js-sub-menu {
+  display: block;
+}
+.history1:hover,
+.members1:hover {
+  background: rgb(137, 146, 153);
+
+}
+
 /* grid-width: 114rem;
 gutter-vertical: 8rem;
 gutter-horizontal: 6rem; */
 
 /* SECTION-CONCERT BUGBUGBUGBUGBUGBUG */
 .section-concert {
+  padding-top: 10rem;
   margin: 7rem 15rem;
 }
 
 .ticket-announce {
   font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.current-date {
   margin-bottom: 7rem;
+  color: rgb(165, 162, 162);
+
 }
 .tickets {
   display: grid;
@@ -110,10 +201,29 @@ gutter-horizontal: 6rem; */
   box-shadow: #333 1rem 1rem 2rem;
 }
 
+/* .concert-date-time {
+  display: flex;
+} */
+
+.date-days-remain {
+  display: flex;
+}
+
+.days-remain {
+  margin-left: 1rem;
+  color: rgb(148, 207, 70);
+}
+
 .date-location {
+  position: relative;
   padding: 3rem 1.5rem;
 }
 
+.location-capacity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .date {
   font-size: 1.3rem;
 }
@@ -259,6 +369,7 @@ footer {
 /**/
 
 .album-section {
+  padding-top: 13rem;
   min-height: 80vh;
   margin: 5rem 5rem;
 }
@@ -288,7 +399,7 @@ footer {
   background-color: rgb(253, 253, 235);
   padding: 0.5rem 0rem;
   list-style-type: none;
-  display: grid;
+  display: none;
 }
 .song {
 }
@@ -316,17 +427,27 @@ footer {
   color: #fff;
   font-size: 2rem;
   font-weight: 200;
-  padding-left: 2rem;
-  padding-top: 1rem;
+  text-align: center;
+  /* padding-left: 1rem; */
+  /* padding-top: 1rem; */
 }
+
+.display-album-btn{
+  background-color: rgba(108, 124, 141);
+  border: none;
+  cursor: pointer;
+  }
 
 .title-live {
   background-color: tomato;
   color: #333;
   font-size: 2rem;
   font-weight: 200;
-  padding-left: 2rem;
-  padding-top: 1rem;
+  text-align: center;
+}
+
+.btn-live {
+  background-color: tomato;
 }
 
 /* BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG */
@@ -363,3 +484,15 @@ footer {
             <input
               type="checkbox"
               name="date" */
+
+
+/* BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG */
+/* js functionalities */
+
+.active {
+  display: grid;
+
+}
+
+
+

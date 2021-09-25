@@ -15,20 +15,27 @@
       src="https://kit.fontawesome.com/01905bf0a9.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Switchfoot | Band</title>
   </head>
   <body>
     <header>
       <div class="container">
         <nav class="navigation">
           <img class="img-logo" src="img/SF_Logo_300x.png" alt="Band logo" />
-          <ul class="nav-items">
-            <li><a href="index.html" class="nav-item">Homepage</a></li>
-            <li><a href="about.html" class="nav-item">About Us</a></li>
-            <li><a href="concerts.html" class="nav-item">Concert</a></li>
-            <li><a href="albums.html" class="nav-item">Albums</a></li>
-            <li><a href="contact.html" class="nav-item">Contact</a></li>
-          </ul>
+          <div class="navbar">
+            <ul class="nav-items">
+              <li><a href="index.html" class="nav-item">Homepage</a></li>
+              <li><a href="about.html" class="nav-item-2">About Us</a>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li class="history1"><a href="#history-section">History</a></li>
+                  <li class="members1"><a href="#members-section">Members</a></li>
+                </ul>
+              </li>
+              <li><a href="concerts.html" class="nav-item">Concert</a></li>
+              <li><a href="albums.html" class="nav-item">Albums</a></li>
+              <li><a href="contact.html" class="nav-item">Contact</a></li>
+            </ul>
+          </div>
           <span class="icon">
             <a href="https://www.instagram.com/switchfoot/?hl=en">
               <i class="fab fa-instagram" aria-hidden="true"></i>
@@ -40,6 +47,7 @@
       <div class="container-for-align">
         <div class="about-photo"></div>
         <div class="about-history">
+          <span id="history-section">
           <div class="about-items">
             <div class="item-photo">
               <img
@@ -67,6 +75,7 @@
                 <em>Hello Hurricane</em> received a Grammy award in 2011 for
                 Best Rock or Rap Gospel Album.
               </h4>
+            </span>
             </div>
           </div>
 
@@ -129,6 +138,7 @@
             </div>
           </div>
           <div class="about-items">
+            <span id="members-section"></span>
             <div class="band-members">
               <div class="member">
                 <img

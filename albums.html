@@ -16,22 +16,27 @@
       src="https://kit.fontawesome.com/01905bf0a9.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Switchfoot | Band</title>
   </head>
   <body>
     <header>
       <div class="container">
         <nav class="navigation">
           <img class="img-logo" src="img/SF_Logo_300x.png" alt="Band logo" />
-          <ul class="nav-items">
-            <li><a href="index.html" class="nav-item">Homepage</a></li>
-            <li>
-              <a href="about.html" class="nav-item">About Us</a>
-            </li>
-            <li><a href="concerts.html" class="nav-item">Concert</a></li>
-            <li><a href="albums.html" class="nav-item">Albums</a></li>
-            <li><a href="contact.html" class="nav-item">Contact</a></li>
-          </ul>
+          <div class="navbar">
+            <ul class="nav-items">
+              <li><a href="index.html" class="nav-item">Homepage</a></li>
+              <li><a href="about.html" class="nav-item-2">About Us</a>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li class="history1"><a href="#about.htmlhistory-section">History</a></li>
+                  <li class="members1"><a href="#about.html/members-section">Members</a></li>
+                </ul>
+              </li>
+              <li><a href="concerts.html" class="nav-item">Concert</a></li>
+              <li><a href="albums.html" class="nav-item">Albums</a></li>
+              <li><a href="contact.html" class="nav-item">Contact</a></li>
+            </ul>
+          </div>
           <span class="icon">
             <a href="https://www.instagram.com/switchfoot/?hl=en">
               <i class="fab fa-instagram" aria-hidden="true"></i>
@@ -46,9 +51,11 @@
             <div class="album-item">
               <div class="title-img">
                 <img src="img/album 1.jpeg" alt="album img" class="img-album" />
-                <h3 class="title-album">Interrobang</h3>
+                <button class="display-album-btn">
+                  <h3 class="title-album">Interrobang</h3>
+                </button>
               </div>
-              <ul class="songs-list">
+              <ul class="songs-list song-list-0">
                 <li class="song"><h4 class="songs-heading">Prayers</h4></li>
                 <li class="song"><h4 class="songs-heading">Bury Me</h4></li>
                 <li class="song"><h4 class="songs-heading">Tail</h4></li>
@@ -63,9 +70,11 @@
             <div class="album-item">
               <div class="title-img">
                 <img src="img/album 2.jpeg" alt="album img" class="img-album" />
+                <button class="display-album-btn">
                 <h3 class="title-album">Shines Through</h3>
+                </button>
               </div>
-              <ul class="songs-list">
+              <ul class="songs-list song-list-1">
                 <li class="song"><h4 class="songs-heading">Holy Water</h4></li>
                 <li class="song"><h4 class="songs-heading">Float</h4></li>
                 <li class="song">
@@ -94,9 +103,11 @@
             <div class="album-item">
               <div class="title-img">
                 <img src="img/album 4.jpeg" alt="album img" class="img-album" />
-                <h3 class="title-album">Fading West</h3>
+                <button class="display-album-btn">
+                  <h3 class="title-album">Fading West</h3>
+                </button>
               </div>
-              <ul class="songs-list">
+              <ul class="songs-list song-list-2">
                 <li class="song"><h4 class="songs-heading">Prayers</h4></li>
                 <li class="song"><h4 class="songs-heading">Bury Me</h4></li>
                 <li class="song"><h4 class="songs-heading">Tail</h4></li>
@@ -111,9 +122,11 @@
             <div class="album-item">
               <div class="title-img">
                 <img src="img/album 3.jpeg" alt="album img" class="img-album" />
-                <h3 class="title-album">Vice Verses</h3>
+                <button class="display-album-btn">
+                  <h3 class="title-album">Vice Verses</h3>
+                </button>
               </div>
-              <ul class="songs-list">
+              <ul class="songs-list song-list-3">
                 <li class="song"><h4 class="songs-heading">Afterlife</h4></li>
                 <li class="song">
                   <h4 class="songs-heading">The Original</h4>
@@ -138,9 +151,11 @@
             <div class="album-item">
               <div class="title-img">
                 <img src="img/live 1.jpeg" alt="album img" class="img-album" />
-                <h3 class="title-live">Live from Dublin</h3>
+                <button class="display-album-btn btn-live">
+                  <h3 class="title-live">Live from Dublin</h3>
+                </button>
               </div>
-              <ul class="songs-list">
+              <ul class="songs-list song-list-4">
                 <li class="song"><h4 class="songs-heading">Prayers</h4></li>
                 <li class="song"><h4 class="songs-heading">Bury Me</h4></li>
                 <li class="song"><h4 class="songs-heading">Tail</h4></li>
@@ -155,9 +170,11 @@
             <div class="album-item">
               <div class="title-img">
                 <img src="img/live 2.jpeg" alt="album img" class="img-album" />
-                <h3 class="title-live">Live from Boston</h3>
+                <button class="display-album-btn btn-live">
+                  <h3 class="title-live">Live from Boston</h3>
+                </button>
               </div>
-              <ul class="songs-list">
+              <ul class="songs-list song-list-5">
                 <li class="song"><h4 class="songs-heading">Prayers</h4></li>
                 <li class="song"><h4 class="songs-heading">Bury Me</h4></li>
                 <li class="song"><h4 class="songs-heading">Tail</h4></li>
@@ -197,5 +214,6 @@
         </div>
       </div>
     </footer>
+    <script src="script2.js"></script>
   </body>
 </html>
