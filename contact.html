@@ -24,10 +24,15 @@
           <div class="navbar">
             <ul class="nav-items">
               <li><a href="index.html" class="nav-item">Homepage</a></li>
-              <li><a href="about.html" class="nav-item-2">About Us</a>
+              <li>
+                <a href="about.html" class="nav-item-2">About Us</a>
                 <ul class="htmlCss-sub-menu sub-menu">
-                  <li class="history1"><a href="#history-section">History</a></li>
-                  <li class="members1"><a href="#members-section">Members</a></li>
+                  <li class="history1">
+                    <a href="#history-section">History</a>
+                  </li>
+                  <li class="members1">
+                    <a href="#members-section">Members</a>
+                  </li>
                 </ul>
               </li>
               <li><a href="concerts.html" class="nav-item">Concert</a></li>
@@ -42,9 +47,10 @@
           </span>
         </nav>
       </div>
+
       <div class="section-forum">
         <div class="container-forum">
-          <form action="contact.html" method="POST">
+          <form class="display" action="contact.html" method="POST">
             <div class="nume">
               <label for="name">Name</label>
               <input type="text" name="nume" id="name" placeholder="..." />
@@ -57,27 +63,40 @@
               <label for="date">Your Birthday</label>
               <input type="date" name="date" id="date" placeholder="..." />
             </div>
-            <div class="Checkbox">
-              <label for="checkbox">Check this if your male</label>
+            <div class='controlgrup'>
+              <label for="checkbox">Male</label>
               <input
                 type="checkbox"
-                name="date"
+                name="check"
+                onclick="onlyOne(this)"
+                id="checkbox"
+                placeholder="..."
+                class="margin-right"
+              />
+              <label for="checkbox">Female</label>
+              <input
+                type="checkbox"
+                name="check"
+                onclick="onlyOne(this)"
                 id="checkbox"
                 placeholder="..."
               />
             </div>
-            <label class="album" for="Albums"
-              >Choose your favorite album:</label
-            >
-
-            <select name="album" id="cars">
-              <option value="volvo">Interrobang</option>
-              <option value="saab">Shines Through</option>
-              <option value="mercedes">Vice Verses</option>
-              <option value="audi">Fading West</option>
-            </select>
+            <div class="album-flex">
+            <label class="album" for="Albums">Choose your favorite album:</label>
+              <select name="album" id="cars">
+                <option value="volvo">Interrobang</option>
+                <option value="saab">Shines Through</option>
+                <option value="mercedes">Vice Verses</option>
+                <option value="audi">Fading West</option>
+              </select>
+            </div>
+            <div class="news-letter">
+              <label for="news">Receive the news paper</label>
+              <input type="checkbox" name="news" id="news" placeholder="">
+            </div>
+            <input class="submit-btn" type="submit">
           </form>
-        </div>
       </div>
     </header>
     <footer>

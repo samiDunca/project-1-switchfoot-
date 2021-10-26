@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Libre Franklin", "Josefin Sans";
+  font-family: 'Libre Franklin', 'Josefin Sans';
   margin-left: auto;
   margin-right: auto;
   font-weight: 400;
@@ -49,7 +49,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: .6s;
+  transition: 0.6s;
   /* padding: 4rem 10rem; */
   z-index: 1000;
 }
@@ -59,7 +59,6 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 nav ul li {
@@ -71,9 +70,9 @@ nav ul li a {
   margin: 0 1.5rem;
   text-decoration: none;
   color: #fff;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-weight: 500;
-  transition: .6s;
+  transition: 0.6s;
 }
 nav.sticky {
   /* padding: .5rem 10rem; */
@@ -130,13 +129,6 @@ nav.sticky {
   width: 100%;
 }
 */
-.section-forum {
-  padding: 1.6rem;
-}
-
-.sticky + .section-forum {
-  padding-top: 10rem;
-} 
 
 /*
 /*
@@ -350,20 +342,57 @@ footer {
     url(img/background-img.jpg);
 }
 .container-forum {
+  width: 60rem;
+  /* background-color: burlywood; */
+  min-height: 50rem;
   padding-top: 10rem;
   margin: 0rem 35rem;
   color: #fff;
+
   /* background-color: green; */
 }
+
+.section-forum {
+  padding: 1.6rem;
+}
+
+.sticky + .section-forum {
+  padding-top: 10rem;
+}
+.controlgrup {
+  border: none;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+}
+.margin-right {
+  margin-right: 6rem;
+}
+
 .nume,
 .email,
 .Birthday,
-.Checkbox,
-.album {
+.checkbox,
+.album-flex {
   font-size: 3rem;
   margin-bottom: 5rem;
+
+  display: flex;
+  justify-content: space-between;
 }
 
+.news-letter {
+  font-size: 3rem;
+}
+.submit-btn {
+  font-size: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+/* DISPLAY GRID */
 
 /* BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG */
 
@@ -374,7 +403,7 @@ footer {
   left: 0;
   background: rgba(108, 124, 141);
   line-height: 4rem;
-  border-radius: 0 0 .6rem .6rem;
+  border-radius: 0 0 0.6rem 0.6rem;
   display: none;
 
   /* display: flex;
@@ -382,7 +411,7 @@ footer {
 }
 .navigation .nav-items .sub-menu li {
   padding: 0 2.2rem;
-  border-bottom: .1rem solid rgba(255,255, 255, .1);
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
 }
 .navigation .nav-items .sub-menu li a {
   color: #fff;
@@ -397,5 +426,4 @@ footer {
 .history1:hover,
 .members1:hover {
   background: rgb(137, 146, 153);
-
 }

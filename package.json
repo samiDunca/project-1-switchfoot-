@@ -1,0 +1,27 @@
+{
+  "name": "2.switchfoot",
+  "version": "1.0.0",
+  "description": "learning node, express, mongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js  "
+  },
+  "author": "Sami",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samiDunca/swicthfoot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samiDunca/swicthfoot/issues"
+  },
+  "homepage": "https://github.com/samiDunca/swicthfoot#readme"
+}
