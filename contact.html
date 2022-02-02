@@ -47,57 +47,80 @@
           </span>
         </nav>
       </div>
-
       <div class="section-forum">
+        <div class="section-input-user-credentials">
+          <form class="login">
+            <input
+              type="text"
+              placeholder="user"
+              class="login__input login__input--user"
+            />
+
+            <input
+              type="text"
+              placeholder="PIN"
+              maxlength="4"
+              class="login__input login__input--pin"
+            />
+            <button class="login__btn">&rarr;</button>
+            <p class="credentials">
+              user: SD &MediumSpace;&MediumSpace;&MediumSpace; pin: 1111
+            </p>
+          </form>
+        </div>
         <div class="container-forum">
-          <form class="display" action="contact.html" method="POST">
+          <form class="form-1">
             <div class="nume">
-              <label for="name">Name</label>
-              <input type="text" name="nume" id="name" placeholder="..." />
+              <label for="name">name</label>
+              <input type="text" name="name" id="name" placeholder=". . ." />
             </div>
             <div class="email">
-              <label for="email">Your Email</label>
-              <input type="email" name="email" id="email" placeholder="..." />
+              <label for="email">email</label>
+              <input type="email" name="email" id="email" placeholder=". . ." />
             </div>
             <div class="Birthday">
-              <label for="date">Your Birthday</label>
-              <input type="date" name="date" id="date" placeholder="..." />
+              <label for="birthday">your birthday</label>
+              <input type="date" name="birthday" id="birthday" />
             </div>
-            <div class='controlgrup'>
-              <label for="checkbox">Male</label>
-              <input
-                type="checkbox"
-                name="check"
-                onclick="onlyOne(this)"
-                id="checkbox"
-                placeholder="..."
-                class="margin-right"
-              />
-              <label for="checkbox">Female</label>
-              <input
-                type="checkbox"
-                name="check"
-                onclick="onlyOne(this)"
-                id="checkbox"
-                placeholder="..."
-              />
+            <div class="controlgrup">
+              <label for="gender">gender</label>
+              <select class="grow_box" name="gender" id="gen">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
             </div>
+
             <div class="album-flex">
-            <label class="album" for="Albums">Choose your favorite album:</label>
-              <select name="album" id="cars">
-                <option value="volvo">Interrobang</option>
-                <option value="saab">Shines Through</option>
-                <option value="mercedes">Vice Verses</option>
-                <option value="audi">Fading West</option>
+              <label for="favourite_album">favorite album:</label>
+              <select
+                class="grow_box"
+                name="favourite_album"
+                id="favourite_album"
+              >
+                <option>Interrobang</option>
+                <option>Shines Through</option>
+                <option>Vice Verses</option>
+                <option>Fading West</option>
               </select>
             </div>
             <div class="news-letter">
               <label for="news">Receive the news paper</label>
-              <input type="checkbox" name="news" id="news" placeholder="">
+              <input type="checkbox" name="news" id="news" placeholder="" />
             </div>
-            <input class="submit-btn" type="submit">
+            <input class="submit-btn" type="submit" />
           </form>
+        </div>
+        <!-- ///////////////// -->
+        <div class="section-display-contacts">
+          <div class="section-table">
+            <main class="app">
+              <!-- SUBMITERS -->
+              <div class="submiters"></div>
+            </main>
+          </div>
+        </div>
       </div>
+      <!-- ///////////////// -->
     </header>
     <footer>
       <div class="footer-container">
@@ -109,6 +132,7 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script3.js"></script>
   </body>
 </html>

@@ -297,7 +297,7 @@ nav.sticky {
   margin-top: 1rem;
 }
 
-BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG
+/* BUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUGBUG */
 
 /* FOOTER SECTION */
 /*
@@ -333,22 +333,29 @@ footer {
 /* SECTION-FORUM */
 
 .section-forum {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-image: linear-gradient(
       to bottom,
       rgba(108, 124, 141),
       rgba(190, 191, 192)
     ),
     url(img/background-img.jpg);
-}
-.container-forum {
-  width: 60rem;
-  /* background-color: burlywood; */
-  min-height: 50rem;
-  padding-top: 10rem;
-  margin: 0rem 35rem;
-  color: #fff;
 
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 10rem 70rem;
+  grid-gap: 5rem;
+}
+.section-input-user-credentials {
+  grid-column: span 2;
+}
+
+.credentials {
+  margin-left: 0.5rem;
+}
+
+.container-forum {
+  padding-top: 6rem;
   /* background-color: green; */
 }
 
@@ -363,33 +370,57 @@ footer {
   border: none;
   font-size: 3.5rem;
   margin-bottom: 4rem;
+
+  display: flex;
+  justify-content: space-between;
 }
+.grow_box {
+  width: 15rem;
+}
+
 .margin-right {
   margin-right: 6rem;
+}
+#name,
+#email,
+#birthday,
+#gen,
+#favourite_album {
+  width: 30rem;
+  height: 2.5rem;
 }
 
 .nume,
 .email,
 .Birthday,
+.controlgrup,
 .checkbox,
-.album-flex {
-  font-size: 3rem;
-  margin-bottom: 5rem;
+.album-flex,
+.submit-btn {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  margin-left: 10rem;
 
-  display: flex;
+  display: grid;
   justify-content: space-between;
 }
 
 .news-letter {
-  font-size: 3rem;
-}
-.submit-btn {
   font-size: 2rem;
+  margin-left: 10rem;
+  margin-bottom: 2rem;
+  max-width: 25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-btn {
   background-color: #fff;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 6px 11px;
   border: none;
-  margin-top: 5rem;
   cursor: pointer;
 }
 /* DISPLAY GRID */
@@ -426,4 +457,133 @@ footer {
 .history1:hover,
 .members1:hover {
   background: rgb(137, 146, 153);
+}
+/* /////////////////////////////// */
+/* Fans */
+/* Fans */
+/* Fans */
+/* Fans */
+/* Fans */
+
+.login {
+  margin-top: 10rem;
+  margin-left: 10rem;
+}
+.login__input {
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  text-align: center;
+  width: 12rem;
+  border-radius: 10rem;
+  color: inherit;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.login__input:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.login__input::placeholder {
+  color: #bbb;
+}
+
+.login__btn {
+  border: none;
+  background: none;
+  font-size: 2.2rem;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login__btn:hover,
+.login__btn:focus,
+.btn--sort:hover,
+.btn--sort:focus {
+  outline: none;
+  color: #777;
+}
+
+.apply-margin-space {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.app {
+  position: relative;
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  gap: 2rem;
+
+  /* NOTE This creates the fade in/out anumation */
+  opacity: 0;
+  transition: all 1s;
+}
+
+/* submiters */
+.submiters {
+  grid-row: 2 / span 3;
+
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.submiters__row {
+  padding: 2.25rem 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.submiters__type {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+  min-width: 15rem;
+}
+
+.submiters__date {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #666;
+}
+
+.submiters__type--deposit {
+  background-image: linear-gradient(to top left, #b6ebd7, #9be15d);
+}
+
+.submiters__type--withdrawal {
+  background-image: linear-gradient(to top left, #c9c2c3, #afa5a6);
+}
+
+.submiters__value {
+  font-size: 1.7rem;
+  margin-left: auto;
+}
+
+.href-details {
+  text-decoration: none;
+  color: #fff;
+}
+.btn-details {
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  background-color: #fdb71e;
+
+  /* background-image: linear-gradient(to top left, #817e63, #c2d45c); */
 }
